@@ -228,20 +228,20 @@
 
 
 
-n=1
-m=10
-c_count=0
-p_count=0
-for i in range(n,m+1):
-        count=0
-    # if i>1:
-        for j in range(1,i+1):
-            if i%j==0:
-              count+=1
-        if count==2:
-              print("prime:",i)
-        elif count>2:
-              print("composite :",i)
+# n=1
+# m=10
+# c_count=0
+# p_count=0
+# for i in range(n,m+1):
+#         count=0
+#     # if i>1:
+#         for j in range(1,i+1):
+#             if i%j==0:
+#               count+=1
+#         if count==2:
+#               print("prime:",i)
+#         elif count>2:
+#               print("composite :",i)
               
    
 
@@ -358,3 +358,113 @@ for i in range(n,m+1):
 #     else:
 #         break
 #     print(first_vowle)
+
+# print(ord('z')-ord('e'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+# strong number 
+
+# a = int(input("entear a number:"))
+# temp = a
+# sum = 0
+
+# def factorial(n):
+#     fact = 1
+#     for i in range(1, n+1):
+#         fact *= i
+#     return fact
+
+# while temp > 0:
+#     digit = temp % 10
+#     sum += factorial(digit)
+#     temp //= 10
+
+# if sum == a:
+#     print("strong number")
+# else:
+#     print("not a strong number")
+
+
+# # perfect number:
+# num=6
+# sum=0
+# for i in range(1,num):
+#     if num%i==0:
+#      sum+=i
+#     # print(sum)
+# if sum==num:
+#     print("perfect number")
+# else:
+#     print("not a perfect number")
+
+
+
+
+# # buzz number      
+
+# num = 22
+# if num % 7 == 0 or num % 10 == 7:
+#     print("Buzz number")
+# else:
+#     print("Not a Buzz number")
+
+
+
+# s1="aneela"
+# s2="usha"
+
+# def mergesting(s1,s2):
+#   list=[]
+# i=0
+# j=0
+# while(i<len(s1) or i<len(s2)):
+#     if (i<len(s1)):
+#         list.append(s1[i])
+#         i+=1
+#     if (i<len(s2)):
+#         list.append(s2[j])
+#         i+=1
+#     return "" .join(list)
+# mergesting("aneela","usha")
+
+
+
+# # merged two dictnories
+# d1={"name":"aneela","city":"hyd"}
+# d2={"age":"23","cource":"python"}
+# d3={**d1,**d2}
+# print(d3)
+
+
+
+# list=[1,2,3,4,5,6]
+# max_value=(4,5)
+# sum=list
+# sum+=max_value
+# prim
+# # p=max_value+sum
+# print(max_value)
+import random
+
+list=[1,2,3,4,5,6]
+random.radent=list
+max_value=[]
+sum=0
+for i in list:
+     sum+=i
+     if i>1:
+       print("prime")
+     else:
+       print("not prime")
+print(max_value)
