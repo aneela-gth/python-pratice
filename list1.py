@@ -608,3 +608,12 @@
 # for i in a:
 #     count+=i
 # print(count)
+
+# Remove duplicates (without set)
+lst=[1,2,2,3,4,4]
+res=[]
+for i in lst:
+    if i not in res:
+        res.append(i)
+print(res)
+
