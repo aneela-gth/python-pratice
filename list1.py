@@ -610,10 +610,45 @@
 # print(count)
 
 # Remove duplicates (without set)
-lst=[1,2,2,3,4,4]
-res=[]
+# lst=[1,2,2,3,4,4]
+# res=[]
+# for i in lst:
+#     if i not in res:
+#         res.append(i)
+# print(res)
+
+# #  Frequency of elements
+lst = [1,2,2,3,3,3]
+freq = {}
 for i in lst:
-    if i not in res:
+    freq[i] = freq.get(i, 0) + 1
+print(freq)
+
+# Even & odd index elements
+lst = [10,20,30,40,50]
+even = lst[::2]
+odd = lst[1::2]
+print(even, odd)
+
+# Elements appearing more than once
+lst = [1,2,2,3,4,4]
+res = []
+for i in lst:
+    if lst.count(i) > 1 and i not in res:
         res.append(i)
 print(res)
 
+# Missing number (1…n)
+lst = [1,2,4,5]
+n = 5
+print(n*(n+1)//2 - sum(lst))
+
+# Pairs with sum = target
+lst = [2,4,3,5,7]
+target = 7
+pairs = []
+for i in range(len(lst)):
+    for j in range(i+1, len(lst)):
+        if lst[i] + lst[j] == target:
+            pairs.append((lst[i], lst[j]))
+print(pairs)
